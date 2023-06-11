@@ -2,8 +2,8 @@
 
 <p align="center">
 <img alt="Version" src="https://img.shields.io/badge/version-2.2-3f51b5.svg?style=flat-square"/>
-<a href="https://flyhigher.top"><img alt="Author" src="https://img.shields.io/badge/author-WYstudio-red.svg?style=flat-square"/></a>
-<a href="https://mdx.flyhigher.top"><img alt="Download" src="https://img.shields.io/badge/download-8.62M-brightgreen.svg?style=flat-square"/></a>
+<img alt="Author" src="https://img.shields.io/badge/author-WYstudio-red.svg?style=flat-square"/>
+<img alt="Download" src="https://img.shields.io/badge/download-8.62M-brightgreen.svg?style=flat-square"/>
 <a href="https://github.com/wystudio001/TiePlugin-AutoBackup/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square"/></a>
 </p>
 
