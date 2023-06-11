@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.wyst.tiecode.plugin"
+    android:versionCode="47"
+    android:versionName="2.2" >
+
+    <application
+        android:allowBackup="true"
+        android:label="自动备份插件"
+        android:theme="@android:style/Theme.Material.Light"
+        android:icon="@drawable/ic_launcher"
+        android:name=".App"
+		android:resizeableActivity = "true">
+        <meta-data
+			android:name="tiecode_plugin"
+			android:value="true"/>
+		<meta-data
+			android:name="plugin_name"
+			android:value="自动备份插件"/>
+		<meta-data
+			android:name="plugin_versionCode"
+			android:value="52"/>
+		<meta-data
+			android:name="plugin_versionName"
+			android:value="2.2"/>
+		<meta-data
+			android:name="plugin_targetVersion"
+			android:value="3"/>
+		<meta-data
+			android:name="plugin_author"
+			android:value="WYstudio"/>
+		<meta-data
+			android:name="plugin_note"
+			android:value="打开工程时，自动将工程所有文件备份到指定目录。以防止结绳的BUG导致工程文件丢失。\n支持本地备份或云盘备份！\n\n本地默认备份路径：/sdcard/TieCode/backup/\n云盘默认备份路径：/云盘根目录/TieCode/"/>
+		<meta-data
+            android:name="plugin_class"
+            android:value=".App" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</manifest>

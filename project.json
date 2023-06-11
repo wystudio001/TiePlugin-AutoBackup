@@ -1,0 +1,8 @@
+{
+   "project_name": "备份插件",
+   "project_kind": 0,
+   "classification": "标准安卓工程",
+   "classification_id": "std.android",
+   "app_name": "备份插件",
+   "package": "xyz.wyst.tiecode.plugin"
+}
