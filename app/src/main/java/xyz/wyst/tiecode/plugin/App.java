@@ -34,7 +34,7 @@ public class App extends PluginApp {
     public final static String packageName = "xyz.wyst.tiecode.plugin"; //插件的包名
     public static App mApp; //插件的上下文
     public static MyActionController mActionController; //动作控制器
-    public final static String app_version = "2.2";
+    public final static String app_version = "2.3";
     private final static String message = "5b2T5YmN6Ieq5Yqo5aSH5Lu95o+S5Lu26Z2e5q2j54mI77yB6K+35LuO5a6Y5pa55rig6YGT5LiL6L29";
 
     @Override

@@ -253,7 +253,7 @@ public class MySettingPageAction extends PluginSettingPageAction {
                     put(NAME_TEXT_YUN_USER, user);
                     put(NAME_TEXT_YUN_USER_PASS, user_pass);
                     put(NAME_SWITCH_YUN, false);
-                    item_yun.setButtonChecked(false);
+                    //item_yun.setButtonChecked(false);
                     ViewUtils.showProgressDialog(getActivity(), "请稍等", "正在登录到蓝奏云......");
                     new Thread(new Runnable() {
                         public void run() {
@@ -266,6 +266,7 @@ public class MySettingPageAction extends PluginSettingPageAction {
                                             tips("登录成功！");
                                             ViewUtils.dismissProgressDialog();
                                             builder.dismiss();
+                                            item_yun.setItemEnabled(true);
                                         }
                                     });
                                 } else {
@@ -499,6 +500,9 @@ public class MySettingPageAction extends PluginSettingPageAction {
         item_yun.setTitle("开启云端自动备份");
         item_yun.setDescription("开启云端后不再进行本地备份\n此开关不影响手动云备份");
         item_yun.setButtonChecked(getBoolean(NAME_SWITCH_YUN, false));
+        if(getString(NAME_TEXT_YUN_USER_COOKIE, "").equals("") || getString(NAME_TEXT_YUN_USER_FOID, "").equals("")){
+            item_yun.setItemEnabled(false);
+        }
         item_yun.setButtonListener(new ITextSwitchItemView.OnCheckedChangeListener() {
             @Override
             public void onChange(ITextSwitchItemView switchButton, boolean z) {
@@ -507,7 +511,6 @@ public class MySettingPageAction extends PluginSettingPageAction {
                     if (getString(NAME_TEXT_YUN_USER_COOKIE, "").equals("")
                             || getString(NAME_TEXT_YUN_USER_FOID, "").equals("")) {
                         tips("请先配置云盘相关设置！");
-                        item_yun.setButtonChecked(false);
                     } else {
                         put(NAME_SWITCH_YUN, true);
                     }

@@ -269,7 +269,7 @@ public class YunBackup {
             return "folder_id未获取";
         }
 
-        String t = httpHtils.UPLOAD("https://pc.woozooo.com/fileup.php", user_cookie, file_path_string, user_folderid,
+        String t = httpHtils.UPLOAD("https://up.woozooo.com/html5up.php", user_cookie, file_path_string, user_folderid,
                 callback);
         String t2 = StringUtils.decodeUnicode(t);
         wlog("文件上传返回数据：\n" + t);
